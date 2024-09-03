@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary to Hourly Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Salary/Hourly Converter</h1>
+        
+        <label for="conversion-type">Choose Conversion Type:</label>
+        <select id="conversion-type">
+            <option value="salary-to-hourly">Convert Yearly Salary to Hourly Wage</option>
+            <option value="hourly-to-salary">Convert Hourly Wage to Yearly Salary</option>
+        </select>
+        
+        <label for="input-value">Enter your value:</label>
+        <input type="number" id="input-value" placeholder="Enter your salary or hourly wage">
+        
+        <label for="weeks-per-year">Work weeks per year (default is 52):</label>
+        <input type="number" id="weeks-per-year" placeholder="52">
+        
+        <label for="hours-per-week">Work hours per week (default is 40):</label>
+        <input type="number" id="hours-per-week" placeholder="40">
+        
+        <button onclick="calculate()">Calculate</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
